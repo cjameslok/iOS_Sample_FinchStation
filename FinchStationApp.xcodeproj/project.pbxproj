@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2800BCB9285135620086111A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800BCB8285135620086111A /* AppDelegate.swift */; };
+		2800BCC2285135650086111A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2800BCC1285135650086111A /* Assets.xcassets */; };
+		2800BCC5285135650086111A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2800BCC3285135650086111A /* LaunchScreen.storyboard */; };
+		2800BCD0285135660086111A /* FinchStationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800BCCF285135660086111A /* FinchStationAppTests.swift */; };
+		2800BCDA285135660086111A /* FinchStationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800BCD9285135660086111A /* FinchStationAppUITests.swift */; };
+		2800BCDC285135660086111A /* FinchStationAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800BCDB285135660086111A /* FinchStationAppUITestsLaunchTests.swift */; };
+		2800BCEE2851382A0086111A /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800BCED2851382A0086111A /* Station.swift */; };
+		2800BCF228513A3E0086111A /* StationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800BCF128513A3E0086111A /* StationsViewController.swift */; };
+		2800BCF428513BEF0086111A /* StationsViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800BCF328513BEF0086111A /* StationsViewPresenter.swift */; };
+		28A0004C2852B5EB00B58F62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A0004B2852B5EB00B58F62 /* Main.storyboard */; };
+		5B0D0C0C76D433108255E61C /* libPods-FinchStationApp-FinchStationAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA02E1D4D56EBF1FF0F7FD9B /* libPods-FinchStationApp-FinchStationAppUITests.a */; };
+		74FAC9E816D479D337083678 /* libPods-FinchStationApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B60F1FE270BBB8209674A05E /* libPods-FinchStationApp.a */; };
+		E53DDAF5CCD65201BED28CBE /* libPods-FinchStationAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6730EED4C087E73F4CF7E2AC /* libPods-FinchStationAppTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2800BCCC285135660086111A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2800BCAD285135610086111A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2800BCB4285135610086111A;
+			remoteInfo = FinchStationApp;
+		};
+		2800BCD6285135660086111A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2800BCAD285135610086111A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2800BCB4285135610086111A;
+			remoteInfo = FinchStationApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09F6AEE00203C90A9B125EB8 /* Pods-FinchStationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinchStationApp.release.xcconfig"; path = "Target Support Files/Pods-FinchStationApp/Pods-FinchStationApp.release.xcconfig"; sourceTree = "<group>"; };
+		2800BCB5285135620086111A /* FinchStationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinchStationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2800BCB8285135620086111A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2800BCC1285135650086111A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2800BCC4285135650086111A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2800BCCB285135660086111A /* FinchStationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinchStationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2800BCCF285135660086111A /* FinchStationAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinchStationAppTests.swift; sourceTree = "<group>"; };
+		2800BCD5285135660086111A /* FinchStationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinchStationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2800BCD9285135660086111A /* FinchStationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinchStationAppUITests.swift; sourceTree = "<group>"; };
+		2800BCDB285135660086111A /* FinchStationAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinchStationAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2800BCED2851382A0086111A /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		2800BCF128513A3E0086111A /* StationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewController.swift; sourceTree = "<group>"; };
+		2800BCF328513BEF0086111A /* StationsViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewPresenter.swift; sourceTree = "<group>"; };
+		28A0004B2852B5EB00B58F62 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		37EB38CE58389719EEBFE4CE /* Pods-FinchStationApp-FinchStationAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinchStationApp-FinchStationAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FinchStationApp-FinchStationAppUITests/Pods-FinchStationApp-FinchStationAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6730EED4C087E73F4CF7E2AC /* libPods-FinchStationAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinchStationAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70075BB92657525A80E1D726 /* Pods-FinchStationApp-FinchStationAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinchStationApp-FinchStationAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FinchStationApp-FinchStationAppUITests/Pods-FinchStationApp-FinchStationAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9105049CED13D925FD4D3F1F /* Pods-FinchStationAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinchStationAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FinchStationAppTests/Pods-FinchStationAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B60F1FE270BBB8209674A05E /* libPods-FinchStationApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinchStationApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62EBEAC857B8C5536C0E227 /* Pods-FinchStationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinchStationApp.debug.xcconfig"; path = "Target Support Files/Pods-FinchStationApp/Pods-FinchStationApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CA02E1D4D56EBF1FF0F7FD9B /* libPods-FinchStationApp-FinchStationAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinchStationApp-FinchStationAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF13D7CA512320F1837EDDA4 /* Pods-FinchStationAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinchStationAppTests.release.xcconfig"; path = "Target Support Files/Pods-FinchStationAppTests/Pods-FinchStationAppTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2800BCB2285135610086111A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74FAC9E816D479D337083678 /* libPods-FinchStationApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2800BCC8285135660086111A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53DDAF5CCD65201BED28CBE /* libPods-FinchStationAppTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2800BCD2285135660086111A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B0D0C0C76D433108255E61C /* libPods-FinchStationApp-FinchStationAppUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		230FDA5145A36D584A99ADDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B60F1FE270BBB8209674A05E /* libPods-FinchStationApp.a */,
+				CA02E1D4D56EBF1FF0F7FD9B /* libPods-FinchStationApp-FinchStationAppUITests.a */,
+				6730EED4C087E73F4CF7E2AC /* libPods-FinchStationAppTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2800BCAC285135610086111A = {
+			isa = PBXGroup;
+			children = (
+				2800BCB7285135620086111A /* FinchStationApp */,
+				2800BCCE285135660086111A /* FinchStationAppTests */,
+				2800BCD8285135660086111A /* FinchStationAppUITests */,
+				2800BCB6285135620086111A /* Products */,
+				5886951136D3706D7E673B78 /* Pods */,
+				230FDA5145A36D584A99ADDA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2800BCB6285135620086111A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2800BCB5285135620086111A /* FinchStationApp.app */,
+				2800BCCB285135660086111A /* FinchStationAppTests.xctest */,
+				2800BCD5285135660086111A /* FinchStationAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2800BCB7285135620086111A /* FinchStationApp */ = {
+			isa = PBXGroup;
+			children = (
+				2800BCEA285136290086111A /* View */,
+				2800BCE9285136210086111A /* Presenter */,
+				2800BCE8285135FD0086111A /* App */,
+				2800BCEC285136390086111A /* Supporting Files */,
+				2800BCEB285136330086111A /* Model */,
+				28A0004B2852B5EB00B58F62 /* Main.storyboard */,
+			);
+			path = FinchStationApp;
+			sourceTree = "<group>";
+		};
+		2800BCCE285135660086111A /* FinchStationAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2800BCCF285135660086111A /* FinchStationAppTests.swift */,
+			);
+			path = FinchStationAppTests;
+			sourceTree = "<group>";
+		};
+		2800BCD8285135660086111A /* FinchStationAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2800BCD9285135660086111A /* FinchStationAppUITests.swift */,
+				2800BCDB285135660086111A /* FinchStationAppUITestsLaunchTests.swift */,
+			);
+			path = FinchStationAppUITests;
+			sourceTree = "<group>";
+		};
+		2800BCE8285135FD0086111A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2800BCB8285135620086111A /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2800BCE9285136210086111A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2800BCF328513BEF0086111A /* StationsViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2800BCEA285136290086111A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2800BCF128513A3E0086111A /* StationsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2800BCEB285136330086111A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2800BCED2851382A0086111A /* Station.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2800BCEC285136390086111A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2800BCC1285135650086111A /* Assets.xcassets */,
+				2800BCC3285135650086111A /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5886951136D3706D7E673B78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B62EBEAC857B8C5536C0E227 /* Pods-FinchStationApp.debug.xcconfig */,
+				09F6AEE00203C90A9B125EB8 /* Pods-FinchStationApp.release.xcconfig */,
+				70075BB92657525A80E1D726 /* Pods-FinchStationApp-FinchStationAppUITests.debug.xcconfig */,
+				37EB38CE58389719EEBFE4CE /* Pods-FinchStationApp-FinchStationAppUITests.release.xcconfig */,
+				9105049CED13D925FD4D3F1F /* Pods-FinchStationAppTests.debug.xcconfig */,
+				DF13D7CA512320F1837EDDA4 /* Pods-FinchStationAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2800BCB4285135610086111A /* FinchStationApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2800BCDF285135660086111A /* Build configuration list for PBXNativeTarget "FinchStationApp" */;
+			buildPhases = (
+				825F5ECEA27D3CCE71C04591 /* [CP] Check Pods Manifest.lock */,
+				2800BCB1285135610086111A /* Sources */,
+				2800BCB2285135610086111A /* Frameworks */,
+				2800BCB3285135610086111A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinchStationApp;
+			productName = FinchStationApp;
+			productReference = 2800BCB5285135620086111A /* FinchStationApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2800BCCA285135660086111A /* FinchStationAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2800BCE2285135660086111A /* Build configuration list for PBXNativeTarget "FinchStationAppTests" */;
+			buildPhases = (
+				3F6B3127BF9A2BAE1B84A6FE /* [CP] Check Pods Manifest.lock */,
+				2800BCC7285135660086111A /* Sources */,
+				2800BCC8285135660086111A /* Frameworks */,
+				2800BCC9285135660086111A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2800BCCD285135660086111A /* PBXTargetDependency */,
+			);
+			name = FinchStationAppTests;
+			productName = FinchStationAppTests;
+			productReference = 2800BCCB285135660086111A /* FinchStationAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2800BCD4285135660086111A /* FinchStationAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2800BCE5285135660086111A /* Build configuration list for PBXNativeTarget "FinchStationAppUITests" */;
+			buildPhases = (
+				4DAF845E56183DFB89E24102 /* [CP] Check Pods Manifest.lock */,
+				2800BCD1285135660086111A /* Sources */,
+				2800BCD2285135660086111A /* Frameworks */,
+				2800BCD3285135660086111A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2800BCD7285135660086111A /* PBXTargetDependency */,
+			);
+			name = FinchStationAppUITests;
+			productName = FinchStationAppUITests;
+			productReference = 2800BCD5285135660086111A /* FinchStationAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2800BCAD285135610086111A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					2800BCB4285135610086111A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2800BCCA285135660086111A = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 2800BCB4285135610086111A;
+					};
+					2800BCD4285135660086111A = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 2800BCB4285135610086111A;
+					};
+				};
+			};
+			buildConfigurationList = 2800BCB0285135610086111A /* Build configuration list for PBXProject "FinchStationApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2800BCAC285135610086111A;
+			productRefGroup = 2800BCB6285135620086111A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2800BCB4285135610086111A /* FinchStationApp */,
+				2800BCCA285135660086111A /* FinchStationAppTests */,
+				2800BCD4285135660086111A /* FinchStationAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2800BCB3285135610086111A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28A0004C2852B5EB00B58F62 /* Main.storyboard in Resources */,
+				2800BCC5285135650086111A /* LaunchScreen.storyboard in Resources */,
+				2800BCC2285135650086111A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2800BCC9285135660086111A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2800BCD3285135660086111A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F6B3127BF9A2BAE1B84A6FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinchStationAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DAF845E56183DFB89E24102 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinchStationApp-FinchStationAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		825F5ECEA27D3CCE71C04591 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinchStationApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2800BCB1285135610086111A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2800BCF428513BEF0086111A /* StationsViewPresenter.swift in Sources */,
+				2800BCF228513A3E0086111A /* StationsViewController.swift in Sources */,
+				2800BCB9285135620086111A /* AppDelegate.swift in Sources */,
+				2800BCEE2851382A0086111A /* Station.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2800BCC7285135660086111A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2800BCD0285135660086111A /* FinchStationAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2800BCD1285135660086111A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2800BCDC285135660086111A /* FinchStationAppUITestsLaunchTests.swift in Sources */,
+				2800BCDA285135660086111A /* FinchStationAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2800BCCD285135660086111A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2800BCB4285135610086111A /* FinchStationApp */;
+			targetProxy = 2800BCCC285135660086111A /* PBXContainerItemProxy */;
+		};
+		2800BCD7285135660086111A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2800BCB4285135610086111A /* FinchStationApp */;
+			targetProxy = 2800BCD6285135660086111A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2800BCC3285135650086111A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2800BCC4285135650086111A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2800BCDD285135660086111A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2800BCDE285135660086111A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2800BCE0285135660086111A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B62EBEAC857B8C5536C0E227 /* Pods-FinchStationApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinchStationApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = James.FinchStationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2800BCE1285135660086111A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F6AEE00203C90A9B125EB8 /* Pods-FinchStationApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinchStationApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = James.FinchStationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2800BCE3285135660086111A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9105049CED13D925FD4D3F1F /* Pods-FinchStationAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = James.FinchStationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinchStationApp.app/FinchStationApp";
+			};
+			name = Debug;
+		};
+		2800BCE4285135660086111A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF13D7CA512320F1837EDDA4 /* Pods-FinchStationAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = James.FinchStationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinchStationApp.app/FinchStationApp";
+			};
+			name = Release;
+		};
+		2800BCE6285135660086111A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70075BB92657525A80E1D726 /* Pods-FinchStationApp-FinchStationAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = James.FinchStationAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinchStationApp;
+			};
+			name = Debug;
+		};
+		2800BCE7285135660086111A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37EB38CE58389719EEBFE4CE /* Pods-FinchStationApp-FinchStationAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = James.FinchStationAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinchStationApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2800BCB0285135610086111A /* Build configuration list for PBXProject "FinchStationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2800BCDD285135660086111A /* Debug */,
+				2800BCDE285135660086111A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2800BCDF285135660086111A /* Build configuration list for PBXNativeTarget "FinchStationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2800BCE0285135660086111A /* Debug */,
+				2800BCE1285135660086111A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2800BCE2285135660086111A /* Build configuration list for PBXNativeTarget "FinchStationAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2800BCE3285135660086111A /* Debug */,
+				2800BCE4285135660086111A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2800BCE5285135660086111A /* Build configuration list for PBXNativeTarget "FinchStationAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2800BCE6285135660086111A /* Debug */,
+				2800BCE7285135660086111A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2800BCAD285135610086111A /* Project object */;
+}

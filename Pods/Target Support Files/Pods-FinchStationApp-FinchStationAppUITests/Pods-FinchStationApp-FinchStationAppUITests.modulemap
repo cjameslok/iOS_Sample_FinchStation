@@ -1,0 +1,6 @@
+module Pods_FinchStationApp_FinchStationAppUITests {
+  umbrella header "Pods-FinchStationApp-FinchStationAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
