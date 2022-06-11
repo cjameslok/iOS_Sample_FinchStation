@@ -53,14 +53,27 @@ class StationsViewController: UIViewController, UITableViewDelegate {
     // MARK: - UI Setup
     func setupUI() {
         
+        navigationItem.title = "Menu"
+        let navigationBar = UINavigationBar()
+        navigationBar.barTintColor = UIColor.blue
+       view.addSubview(navigationBar)
         
         view.addSubview(tableView)
-        self.title = "Stations"
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        
+        let layoutViews:[String:Any] = ["tableView":tableView,"navigationBar":navigationBar]
+        var constraints = [NSLayoutConstraint]()
+        let HConstraint = "H:|-10-[tableView]-10-|"
+        let VConstraint = "V:|-[navigationBar]-10-[tableView]|"
+        constraints += NSLayoutConstraint.constraints(withVisualFormat: HConstraint, options: .alignAllCenterY, metrics: nil, views: layoutViews)
+        constraints += NSLayoutConstraint.constraints(withVisualFormat: VConstraint, options: .alignAllLeading, metrics: nil, views: layoutViews)
+        
+        NSLayoutConstraint.activate(constraints)
+        
+//        tableView.translatesAutoresizingMaskIntoConstraints = false
+//        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+//        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+//        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+//        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
 
     }
 
