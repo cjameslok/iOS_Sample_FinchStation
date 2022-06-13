@@ -9,16 +9,26 @@ import UIKit
 
 protocol StationsView: AnyObject{
     func onStationsRetrieval(stations: [Station])
+    func onShowStationStops(station: Station)
 }
 
 
-class StationsViewController: UIViewController, UITableViewDelegate {
+class StationsViewController: UITableViewController {
+    
+    // MARK: - Properties
+    var presenter: StationsViewPresenter!
+    var stations: [Station] = []
+    var selectedIndex: IndexPath?
 
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
+        let presenter = StationsPresenter(view: self)
+        self.presenter = presenter
+        self.setupNavBar()
+        view.backgroundColor = UIColor(red: 1.00, green: 0.98, blue: 0.88, alpha: 1.00)
+        self.tableView.register(StationDetailsDropCell.self, forCellReuseIdentifier: "stationCell")
         super.viewDidLoad()
-//        self.view.backgroundColor = UIColor.red
-        setupUI()
+        
         presenter.viewDidLoad()
     }
     
@@ -27,54 +37,59 @@ class StationsViewController: UIViewController, UITableViewDelegate {
     }
 
     
-    // MARK: - Properties
-    var presenter: StationsViewPresenter!
-    var stations: [Station] = []
+    //MARK: Table View code
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
-    lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: view.bounds)
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.tableFooterView = UIView()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        return tableView
-    }()
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return stations.count
+    }
     
-    lazy var placeholderLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
-        label.textColor = .darkGray
-        label.text = "No stored items yet"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        guard let selectedIndex = selectedIndex else {
+            return 60
+        }
+        
+        if selectedIndex == indexPath {return 120}
+        return 60
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndex = indexPath
+        tableView.beginUpdates()
+        tableView.reloadRows(at: [selectedIndex!], with: .none)
+        tableView.endUpdates()
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "stationCell", for: indexPath) as! StationDetailsDropCell
+        cell.viewController = self
+        cell.station = stations[indexPath.row]
+        cell.animate()
+        return cell
+    }
+    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        presentViewController(food: foods[indexPath.row])
+//    }
+
+    
     
     // MARK: - UI Setup
-    func setupUI() {
+    
+    func setupNavBar() {
+        navigationItem.title = "Stations"
         
-        navigationItem.title = "Menu"
-        let navigationBar = UINavigationBar()
-        navigationBar.barTintColor = UIColor.blue
-       view.addSubview(navigationBar)
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = UIColor(red: 0.38, green: 0.42, blue: 0.22, alpha: 1.00)
+        appearance.titleTextAttributes = [.foregroundColor: UIColor(red: 1.00, green: 0.98, blue: 0.88, alpha: 1.00)]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor(red: 1.00, green: 0.98, blue: 0.88, alpha: 1.00)]
         
-        view.addSubview(tableView)
-        
-        let layoutViews:[String:Any] = ["tableView":tableView,"navigationBar":navigationBar]
-        var constraints = [NSLayoutConstraint]()
-        let HConstraint = "H:|-10-[tableView]-10-|"
-        let VConstraint = "V:|-[navigationBar]-10-[tableView]|"
-        constraints += NSLayoutConstraint.constraints(withVisualFormat: HConstraint, options: .alignAllCenterY, metrics: nil, views: layoutViews)
-        constraints += NSLayoutConstraint.constraints(withVisualFormat: VConstraint, options: .alignAllLeading, metrics: nil, views: layoutViews)
-        
-        NSLayoutConstraint.activate(constraints)
-        
-//        tableView.translatesAutoresizingMaskIntoConstraints = false
-//        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-//        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-//        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-//        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
 
 }
@@ -85,36 +100,26 @@ extension StationsViewController: StationsView {
     func onStationsRetrieval(stations: [Station]) {
         print("View recieves the result from the Presenter.")
         self.stations = stations
+        
+        //Testing
+        var station1 = Station(name: "Station 1")
+        var station2 = Station(name: "Station 2")
+        var station3 = Station(name: "Station 3")
+        station1.stops = [station2, station3]
+        station2.stops = [station1, station3]
+        station3.stops = [station1, station2]
+        self.stations.append(station1)
+        self.stations.append(station2)
+        self.stations.append(station3)
+
+        
         self.tableView.reloadData()
     }
     
+    func onShowStationStops(station: Station) {
+        self.navigationController?.pushViewController(StopsViewController(station: station), animated: true)
+    }
 
-}
-
-// MARK: - UITableView Data Source
-extension StationsViewController: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        tableView.isHidden = self.stations.isEmpty
-//        placeholderLabel.isHidden = !self.stations.isEmpty
-        placeholderLabel.isHidden = false
-        
-        return self.stations.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
-        cell.textLabel?.text = stations[indexPath.row].name
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // a place for a presenter method
-        }
-    }
-    
-    
 }
 
 
